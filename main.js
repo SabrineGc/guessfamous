@@ -34,13 +34,7 @@ function changePic(){
   var int=document.getElementById('#inp')
   var score=0
  $('.btn').click(
-
-    //$("body").append($("").val())
-
-
-  
-
-    
+ 
   function(){
     
     
