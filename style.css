@@ -1,9 +1,10 @@
 body{
-    background-size: 95%;
+    background-size:cover;
     background-image: url("https://www.html5gamedevs.com/uploads/monthly_2020_01/ezgif.com-optimize.gif.3a2daafb3ff14fd1ed7e408af434e11b.gif");
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 400px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    
 }
 
 .rules{
@@ -23,11 +24,7 @@ body{
 }
 
 
-img{
-    height: 250px;
-    width: 250px;
-    border-radius: 8px;
-}
+
 .bb {
     margin: 0;
     position: absolute;
@@ -49,38 +46,7 @@ img{
   .bb:hover {
     background-color: #3e8e41;
   }
-  #inp{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8%;
-    margin-left:25% ;
-    margin-right:35% ;
-    border: 2px solid greenyellow;
-    height: 32px;
-  }
-
-    .btn{
-        margin: 0;
-        position: absolute;
-        top: 90%;
-        left: 45%;
-        background-color: #4caf50;
-        border-radius: 15px;
-        box-shadow: 0 9px #999;
-        padding: 15px 25px;
-        font-size: 14px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #fff;
-      }
-      .btn:hover {
-        background-color: #943fa5;
-      }
-     
+ 
 
   
   

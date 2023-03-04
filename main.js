@@ -16,6 +16,7 @@ var array=[
     {pic:"https://www.gala.fr/imgre/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fprismamedia_people.2F2017.2F06.2F30.2Fca84f241-5609-4877-aebb-2fb0d11c2f99.2Ejpeg/1731x1200/quality/80/zayn-malik.jpeg", name:"zayn malik"},
     {pic:"https://m.media-amazon.com/images/M/MV5BMTUxMzU2MTk1OF5BMl5BanBnXkFtZTgwNzg4NjAwMzI@._V1_.jpg", name:"harry styles"}
 ];
+
 var pic=0;
 var correctGuess = ""
 function changePic(){
@@ -33,28 +34,40 @@ function changePic(){
   
   var int=document.getElementById('#inp')
   var score=0
+  var count=0
  $('.btn').click(
  
   function(){
+    $("#picture").css("-webkit-filter","blur(9px)")
     
     
     
-        if($('#inp').val()===correctGuess){
+    
+        if(($('#inp').val()===correctGuess)&&(count<=3)){
             score=score+10
-           alert ("You Guessed! "+" Your Score is " +score)
+           swal ("You Guessed! in the "+(count+1)+" try "+" Your Score is " +score)
            changePic()
            $('#inp').val("")
            
         }
-        else{
-            score=score
-            alert ("Sorry! Try another time! "+" Your Score still " +score)
+        else if(count<3){
+             score=score
+             count++
+            swal ("Sorry! Try another time! "+" Your Score still " +score)
             $('#inp').val("")
         }
+        else if(count===3){
+            swal("You lose!")
+            $("#picture").css("-webkit-filter","blur(0px)")
             
+            
+        }
+        
+           
 
         
     })
-
+    
+    
 
 
